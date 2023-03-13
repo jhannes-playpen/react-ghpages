@@ -1,0 +1,32 @@
+{
+  "name": "react-github",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "parcel": "^2.8.3",
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "prettier": "^2.8.4",
+    "process": "^0.11.10",
+    "rimraf": "^4.4.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "parcel serve --public-url /react-ghpages/",
+    "build:parcel": "parcel build --public-url /react-ghpages/",
+    "build:typescript": "tsc --noEmit",
+    "build:prettier": "prettier --check src/",
+    "prettier": "prettier --write src/",
+    "build": "npm run build:typescript && npm run build:prettier && npm run build:parcel",
+    "clean": "rimraf dist/ .parcel-cache/"
+  },
+  "targets": {
+    "default": {
+      "source": "src/index.html"
+    }
+  }
+}
