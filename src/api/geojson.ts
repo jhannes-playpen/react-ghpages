@@ -27,7 +27,10 @@ export interface FeatureCollectionDto<F extends FeatureDto> {
 /**
  * GeoJSon Feature
  */
-export interface FeatureDto<GEO extends GeometryDto = GeometryDto, PROP = unknown> {
+export interface FeatureDto<
+  GEO extends GeometryDto = GeometryDto,
+  PROP = unknown
+> {
   type: "Feature";
   id?: number;
   geometry: GEO;
