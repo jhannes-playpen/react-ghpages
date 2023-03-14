@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+}
+
+#app {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+
+#app main {
+  display: flex;
+}
+
+#app main aside {
+  background-color: orange;
+  min-width: 15em;
+  max-width: 20em;
+  padding: 0.5em;
+  overflow-y: auto;
+}
+
+#menu-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#menu-sidebar .spacer {
+  flex: 1;
+}
+
+#map {
+  flex: 1;
+  background-color: lightblue;
+}
