@@ -38,7 +38,11 @@ export function Application() {
             <ContentSidebar />
           </main>
           <footer>
-            Application by Johannes [<a href="/api-doc/">API doc</a>]
+            Application by Johannes [
+            <a href="https://github.com/jhannes-playpen/react-ghpages">
+              Source code
+            </a>
+            ]
           </footer>
         </HashRouter>
       </MapContextProvider>
